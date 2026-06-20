@@ -1,0 +1,59 @@
+name: "➕ Submit a Prompt"
+description: "Add a custom prompt to the Prompt Bazaar."
+title: "[Prompt] <name>"
+labels: ["submission", "prompt"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Prompt Name
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - claude-code
+        - aider
+        - open-code
+        - codex
+        - misc
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Target Tool / Agent
+      options:
+        - Claude Code
+        - Aider
+        - Codex
+        - Generic / Agnostic
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author / credit
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+    validations:
+      required: false
+  - type: textarea
+    id: prompt_text
+    attributes:
+      label: Prompt Text / Instructions
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not posted any secret API keys.
+          required: true

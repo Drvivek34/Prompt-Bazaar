@@ -1,0 +1,23 @@
+# Codex Audit accessibility for Django (Wcag Compliance Focus)
+
+A developer-focused prompt designed for Codex to audit accessibility Django applications with a focus on wcag compliance.
+
+> Part of **[Prompt Bazaar](../../README.md)** · [Mega AI Bazaar](https://drvivek34.github.io/Mega-AI-Bazaar/)
+
+## Details
+- **Target Tool / Agent**: `Codex`
+- **Source URL**: https://github.com/Drvivek34/Prompt-Bazaar/tree/main/codex/audit-accessibility-django-wcag-compliance-137
+- **Author**: Prompt Bazaar Community
+- **License**: MIT
+- **Date Added**: 2026-06-20
+
+## Prompt Instructions
+```markdown
+Role: You are a senior developer specializing in Django.
+Task: Audit accessibility the Django project focusing on wcag compliance.
+
+Instructions:
+1. Verify elements have correct ARIA roles. Ensure keyboard navigability and high contrast. Add descriptive alt tags.
+2. Ensure standard conventions of Django are fully followed.
+3. Verify all inputs and outputs.
+```
